@@ -6,7 +6,7 @@ import { Container, ProjectList } from './styles'
 
 export default function Project() {
   return (
-    <Section>
+    <Section style={{ height: 'auto' }}>
       <Container>
         <H1 fontWeight={600} marginBottom={30}>
           Project

@@ -1,27 +1,16 @@
-import { Canvas } from '@react-three/fiber'
 import Card from '../common/Card'
 import Section from '../common/Section'
 import { H1, H5 } from '../common/Typography'
-import { CanvasWrapper, Grid, ListTitle, ModelCard, Ul } from './styles'
-import { CatModel } from './CatModel'
+import { Grid, ListTitle, ProfileCard, Ul } from './styles'
 
 export default function Info() {
   return (
     <Section>
       <Grid>
         <H1 fontWeight={700}>Kayeon</H1>
-        <ModelCard>
-          <img src="/image/programming.png" alt="programming icon" />
-          <CanvasWrapper>
-            <Canvas>
-              <ambientLight intensity={0.75} />
-              <directionalLight color="white" position={[10, 10, 10]} />
-              <group position={[0, 0, 0]}>
-                <CatModel scale={[0.01, 0.01, 0.01]} position={[-0.5, -2, 0]} rotation={[0, (20 * Math.PI) / 100, 0]} />
-              </group>
-            </Canvas>
-          </CanvasWrapper>
-        </ModelCard>
+        <ProfileCard>
+          <img src="/image/profile.jpeg" alt="profile" />
+        </ProfileCard>
         <Card>
           <Ul>
             <li>

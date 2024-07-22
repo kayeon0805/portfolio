@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 80%;
+  padding: 40px 0;
 
   ${({ theme }) => theme.media('desktop')`
     width: 90%;

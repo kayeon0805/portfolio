@@ -42,6 +42,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		line-height: 1;
+		overflow: hidden;
 	}
 	ol, ul {
 		list-style: none;
@@ -87,8 +88,12 @@ const GlobalStyle = createGlobalStyle`
 
 	main {
 		width: calc(100% - var(--nav-width));
+		height: 100vh;
 		margin-left: var(--nav-width);
-
+		overflow-y: scroll;
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		
 		${({ theme }) => theme.media('tablet')`
 			width: 100%;
 			margin-left: 0;

@@ -1,36 +1,26 @@
 import styled from 'styled-components'
 import Card from '../common/Card'
 import { H1, H3, H5 } from '../common/Typography'
+import Section from '../common/Section'
 
-export const ModelCard = styled(Card)`
+export const ProfileCard = styled(Card)`
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
+  max-height: 400px;
 
   img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
   }
-
-  ${({ theme }) => theme.media('tablet')`
-      justify-content: center;
-
-      img {
-        width: auto;
-        height: 100%;
-      }
-    `};
 `
 
 export const Grid = styled.div`
   width: 80%;
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
   column-gap: 40px;
 
   ${H1} {
@@ -54,26 +44,6 @@ export const Grid = styled.div`
       grid-template-columns: auto;
       column-gap: 0;
       row-gap: 20px;
-    `};
-`
-
-export const CanvasWrapper = styled.div`
-  width: 260px;
-  height: 260px;
-
-  ${({ theme }) => theme.media('desktop')`
-      width: 200px;
-      height: 200px;
-    `};
-
-  ${({ theme }) => theme.media('tablet')`
-      width: 300px;
-      height: 300px;
-    `};
-
-  ${({ theme }) => theme.media('mobile')`
-      width: 240px;
-      height: 240px;
     `};
 `
 

@@ -1,0 +1,8 @@
+Model Information:
+* title:	SideTable
+* source:	https://sketchfab.com/3d-models/sidetable-4d17b247556546b99c5dd46f3b67b781
+* author:	Twpic (https://sketchfab.com/TWPIC)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

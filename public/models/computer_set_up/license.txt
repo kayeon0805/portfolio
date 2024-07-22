@@ -1,0 +1,8 @@
+Model Information:
+* title:	Gaming set up
+* source:	https://sketchfab.com/3d-models/gaming-set-up-68f2a474d20141bd8eb3067b9c2e9bc7
+* author:	LukeVissian (https://sketchfab.com/LukeVissian)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

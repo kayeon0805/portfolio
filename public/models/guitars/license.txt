@@ -1,0 +1,8 @@
+Model Information:
+* title:	LJAS - Guitars & Amp
+* source:	https://sketchfab.com/3d-models/ljas-guitars-amp-299481c99a40490985678f9a227f5bfa
+* author:	La Jarre à Son (https://sketchfab.com/la_jarre_a_son)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
