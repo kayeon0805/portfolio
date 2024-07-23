@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const ProjectList = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 60px;
 `
 
 export const ProjectSection = styled.div`

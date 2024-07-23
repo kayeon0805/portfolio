@@ -10,6 +10,8 @@ export const NavBar = styled.nav`
   gap: 20px;
   width: var(--nav-width);
   height: 100dvh;
+  min-height: 500px;
+  overflow-y: auto;
   background-color: var(--primary-card-bg-color);
   z-index: 1;
   padding: 30px 0;

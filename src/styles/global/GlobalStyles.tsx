@@ -98,6 +98,10 @@ const GlobalStyle = createGlobalStyle`
 			width: 100%;
 			margin-left: 0;
 		`};
+
+		${({ theme }) => theme.media('mobile')`
+			scroll-snap-type: none;
+		`}
 	}
 `
 

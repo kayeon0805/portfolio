@@ -1,11 +1,10 @@
 import Card from '../common/Card'
-import Section from '../common/Section'
 import { H1, H5 } from '../common/Typography'
-import { Grid, ListTitle, ProfileCard, Ul } from './styles'
+import { Grid, ListTitle, ProfileCard, StyledSection, Ul } from './styles'
 
 export default function Info() {
   return (
-    <Section>
+    <StyledSection>
       <Grid>
         <H1 fontWeight={700}>Kayeon</H1>
         <ProfileCard>
@@ -35,6 +34,6 @@ export default function Info() {
           </Ul>
         </Card>
       </Grid>
-    </Section>
+    </StyledSection>
   )
 }

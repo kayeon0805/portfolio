@@ -3,6 +3,12 @@ import Card from '../common/Card'
 import { H1, H3, H5 } from '../common/Typography'
 import Section from '../common/Section'
 
+export const StyledSection = styled(Section)`
+  ${({ theme }) => theme.media('mobile')`
+			padding: 50px 0;
+		`}
+`
+
 export const ProfileCard = styled(Card)`
   display: flex;
   justify-content: center;

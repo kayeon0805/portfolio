@@ -3,6 +3,10 @@ import Section from '../common/Section'
 
 export const StyledSection = styled(Section)`
   flex-direction: column;
+
+  ${({ theme }) => theme.media('mobile')`
+			height: 100dvh;
+		`}
 `
 
 export const List = styled.ul`
@@ -22,6 +26,10 @@ export const List = styled.ul`
     svg {
       width: 50px;
       height: 50px;
+
+      .light & {
+        fill: #3d3d3d;
+      }
     }
   }
 
