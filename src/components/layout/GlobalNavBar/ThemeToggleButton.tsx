@@ -11,7 +11,7 @@ export default function ThemeToggleButton() {
         marginTop: 'auto',
       }}
     >
-      <img src={`/image/icon_${theme === 'dark' ? 'moon' : 'sun'}.svg`} alt="toggle theme" />
+      <img src={`/images/icon_${theme === 'dark' ? 'moon' : 'sun'}.svg`} alt="toggle theme" />
     </Button>
   )
 }

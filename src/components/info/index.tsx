@@ -9,7 +9,7 @@ export default function Info() {
       <Grid>
         <H1 fontWeight={700}>Kayeon</H1>
         <ProfileCard>
-          <img src="/image/profile.jpeg" alt="profile" />
+          <img src="/images/profile.jpeg" alt="profile" />
         </ProfileCard>
         <Card>
           <Ul>
