@@ -1,6 +1,6 @@
 import Card from '../common/Card'
-import { H3, H5 } from '../common/Typography'
-import { CardFlexContainer, HistoryList, HistoryListTitle } from './HistoryItem.styles'
+import { H1, H5 } from '../common/Typography'
+import { CardFlexContainer, HistoryList, HistoryListTitle, ListItem } from './HistoryItem.styles'
 
 type Image = {
   src: string
@@ -17,10 +17,10 @@ interface Props {
 
 export default function HistoryItem({ title, subtitle, image, workScopes, techSpecs }: Props) {
   return (
-    <li>
-      <H3 fontWeight={500} marginBottom={12}>
+    <ListItem>
+      <H1 fontWeight={500} marginBottom={20}>
         {title}
-      </H3>
+      </H1>
       <H5 style={{ fontStyle: 'italic' }}>{subtitle}</H5>
       <CardFlexContainer>
         <Card className="image-card">
@@ -35,7 +35,7 @@ export default function HistoryItem({ title, subtitle, image, workScopes, techSp
               ))}
             </HistoryList>
           </div>
-          <div style={{ marginTop: 20 }}>
+          <div style={{ marginTop: 30 }}>
             <HistoryListTitle>Tech Spec</HistoryListTitle>
             <HistoryList>
               {techSpecs.map((spec) => (
@@ -45,6 +45,6 @@ export default function HistoryItem({ title, subtitle, image, workScopes, techSp
           </div>
         </Card>
       </CardFlexContainer>
-    </li>
+    </ListItem>
   )
 }

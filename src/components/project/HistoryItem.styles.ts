@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-import { H4 } from '../common/Typography'
+import { H3 } from '../common/Typography'
+import Section from '../common/Section'
 
 export const CardFlexContainer = styled.div`
   display: flex;
-  margin-top: 12px;
+  margin-top: 40px;
   gap: 30px;
   white-space: pre-wrap;
 
@@ -22,15 +23,15 @@ export const CardFlexContainer = styled.div`
     `};
 `
 
-export const HistoryListTitle = styled(H4).attrs({
+export const HistoryListTitle = styled(H3).attrs({
   fontWeight: 600,
-  marginBottom: 8,
+  marginBottom: 14,
 })``
 
 export const HistoryList = styled.ul`
   li {
     margin-left: 10px;
-    line-height: 1.5;
+    line-height: 1.8;
 
     &::marker {
       content: '- ';
@@ -40,4 +41,11 @@ export const HistoryList = styled.ul`
       font-size: 14px;
     `};
   }
+`
+
+export const ListItem = styled(Section).attrs({
+  as: 'li',
+})`
+  flex-direction: column;
+  align-items: start;
 `

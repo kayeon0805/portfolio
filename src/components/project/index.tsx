@@ -1,16 +1,12 @@
-import Section from '../common/Section'
 import { H1 } from '../common/Typography'
 import HistoryItem from './HistoryItem'
 import { VplateEditorInfo, VplateInfo, adminInfo, labsInfo } from './constants'
-import { Container, ProjectList } from './styles'
+import { Container, ProjectList, ProjectSection } from './styles'
 
 export default function Project() {
   return (
-    <Section style={{ height: 'auto' }}>
+    <ProjectSection>
       <Container>
-        <H1 fontWeight={600} marginBottom={30}>
-          Project
-        </H1>
         <ProjectList>
           <HistoryItem {...VplateInfo} />
           <HistoryItem {...VplateEditorInfo} />
@@ -18,6 +14,6 @@ export default function Project() {
           <HistoryItem {...labsInfo} />
         </ProjectList>
       </Container>
-    </Section>
+    </ProjectSection>
   )
 }
