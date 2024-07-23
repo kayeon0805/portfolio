@@ -43,4 +43,15 @@ export const NavList = styled.ul`
   align-items: center;
   gap: 30px;
   width: fit-content;
+
+  li {
+    &.active svg path {
+      fill: #ffb929;
+    }
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 `
