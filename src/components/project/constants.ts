@@ -2,7 +2,7 @@ export const VplateInfo = {
   title: 'Vplate',
   subtitle: '- 숏폼 광고영상 자동 제작 및 SNS 자동 업로드 서비스 프론트 개발.',
   image: {
-    src: '/image/vplate.png',
+    src: '/images/vplate.png',
     alt: 'vplate',
   },
   workScopes: [
@@ -20,7 +20,7 @@ export const VplateEditorInfo = {
   title: 'Vplate Editor',
   subtitle: '- 광고 영상을 만들기 위한 에디터 프론트 개발.',
   image: {
-    src: '/image/vplate_editor.png',
+    src: '/images/vplate_editor.png',
     alt: 'vplate editor',
   },
   workScopes: [
@@ -38,7 +38,7 @@ export const adminInfo = {
   title: 'Admin',
   subtitle: '- 템플릿 영상 해시태그 작업용 어드민 프로젝트 프론트 개발.',
   image: {
-    src: '/image/admin.png',
+    src: '/images/admin.png',
     alt: 'admin',
   },
   workScopes: ['페이지네이션 처리', '해시태그 수정 기능 추가'],
@@ -49,7 +49,7 @@ export const labsInfo = {
   title: 'Vplate Labs',
   subtitle: '- 출시될 광고영상 자동 제작 기능을 체험할 수 있는 전시회 전용 데모 프로젝트 프론트 개발.',
   image: {
-    src: '/image/vplate_labs.png',
+    src: '/images/vplate_labs.png',
     alt: 'vplate labs',
   },
   workScopes: ['광고영상 자동 제작 기능 추가'],

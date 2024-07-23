@@ -3,6 +3,7 @@ import { H3 } from '../common/Typography'
 import Section from '../common/Section'
 
 export const CardFlexContainer = styled.div`
+  width: 100%;
   display: flex;
   margin-top: 40px;
   gap: 30px;
