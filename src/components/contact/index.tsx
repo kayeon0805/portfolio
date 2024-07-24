@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { H1 } from '../common/Typography'
+import { H1 } from '../common/typography'
 import { CopyStatusMessage, List, StyledSection } from './styles'
 
 export default function Contact() {

@@ -1,4 +1,4 @@
-import { H1 } from '../common/Typography'
+import { H1 } from '../common/typography'
 import HistoryItem from './HistoryItem'
 import { VplateEditorInfo, VplateInfo, adminInfo, labsInfo } from './constants'
 import { Container, ProjectList, ProjectSection } from './styles'

@@ -1,5 +1,5 @@
-import Card from '../common/Card'
-import { H1, H5 } from '../common/Typography'
+import Card from '../common/card'
+import { H1, H5 } from '../common/typography'
 import { CardFlexContainer, HistoryList, HistoryListTitle, ListItem } from './HistoryItem.styles'
 
 type Image = {
@@ -18,9 +18,7 @@ interface Props {
 export default function HistoryItem({ title, subtitle, image, workScopes, techSpecs }: Props) {
   return (
     <ListItem>
-      <H1 fontWeight={500} marginBottom={20}>
-        {title}
-      </H1>
+      <H1 fontWeight={500}>{title}</H1>
       <H5 style={{ fontStyle: 'italic' }}>{subtitle}</H5>
       <CardFlexContainer>
         <Card className="image-card">

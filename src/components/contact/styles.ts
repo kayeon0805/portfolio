@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import Section from '../common/Section'
+import Section from '../common/section'
 
 export const StyledSection = styled(Section)`
   flex-direction: column;
