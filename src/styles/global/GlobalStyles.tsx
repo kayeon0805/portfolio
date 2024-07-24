@@ -133,6 +133,7 @@ const GlobalStyle = createGlobalStyle`
 		margin-left: var(--nav-width);
 		overflow-y: scroll;
 		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
 		
 		${({ theme }) => theme.media('tablet')`
 			width: 100%;
