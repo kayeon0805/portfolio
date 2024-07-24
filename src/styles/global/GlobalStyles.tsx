@@ -1,6 +1,47 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'Pretendard';
+	font-weight: 300;
+    src: url('/fonts/Pretendard-Light.woff2') format('woff2'),
+         url('/fonts/Pretendard-Light.woff') format('woff');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+	font-weight: 400;
+    src: url('/fonts/Pretendard-Regular.woff2') format('woff2'),
+         url('/fonts/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+  }
+
+ 
+  @font-face {
+    font-family: 'Pretendard';
+	font-weight: 500;
+    src: url('/fonts/Pretendard-Medium.woff2') format('woff2'),
+         url('/fonts/Pretendard-Medium.woff') format('woff');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+	font-weight: 600;
+    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2'),
+         url('/fonts/Pretendard-SemiBold.woff') format('woff');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Pretendard';
+	font-weight: 700;
+    src: url('/fonts/Pretendard-Bold.woff2') format('woff2'),
+         url('/fonts/Pretendard-Bold.woff') format('woff');
+    font-style: normal;
+  }
+
   :root {
     --primary-bg-color: #000000;
     --secondary-bg-color: #e4e4e4;
@@ -12,6 +53,7 @@ const GlobalStyle = createGlobalStyle`
 	--secondary-card-bg-color: #f1f1f1;
 
     --nav-width: 80px;
+	font-family: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -74,7 +116,6 @@ const GlobalStyle = createGlobalStyle`
 		cursor: pointer;
 	}
 
-
 	body {
 		background: var(--primary-bg-color);
 		color: var(--primary-text-color);
@@ -102,6 +143,7 @@ const GlobalStyle = createGlobalStyle`
 			scroll-snap-type: none;
 		`}
 	}
+
 `
 
 export default GlobalStyle
