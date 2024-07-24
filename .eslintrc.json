@@ -11,7 +11,7 @@
     "createDefaultProgram": true
   },
   "plugins": ["@typescript-eslint", "import"],
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "plugin:import/typescript", "plugin:import/recommended"],
   "globals": {
     "JSX": true
   },
@@ -175,7 +175,7 @@
     "space-infix-ops": "error",
     "jsx-a11y/aria-props": "off",
     "import/order": [
-      "warn",
+      "error",
       {
         "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
         "newlines-between": "never",
@@ -183,7 +183,8 @@
       }
     ],
     "no-restricted-imports": ["error"],
-    "no-async-promise-executor": "warn"
+    "no-async-promise-executor": "warn",
+    "import/no-named-as-default": "off"
   },
   "settings": {
     "import/resolver": {

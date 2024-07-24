@@ -2,11 +2,11 @@ import React from 'react'
 import { GroupProps, useFrame, useGraph } from '@react-three/fiber'
 import { useAnimations, useGLTF } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
-import { LoopRepeat, Object3DEventMap } from 'three'
+import { LoopRepeat } from 'three'
 import { Group } from 'three'
 
 export function SimpleCharacterModel(props: GroupProps) {
-  const group = React.useRef<Group<Object3DEventMap>>(null)
+  const group = React.useRef<Group>(null)
   const { scene, animations } = useGLTF('models/simple_character/scene.gltf')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)

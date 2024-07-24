@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+import Loader from '../../common/loader'
 import { RoomModel } from './RoomModel'
 import { ComputerModel } from './ComputerModel'
 import { GuitarModel } from './GuitarModel'
@@ -6,8 +8,6 @@ import { SimpleCharacterModel } from './SimpleCharacterModel'
 import { SideTableModel } from './SideTableModel'
 import { BunnyModel } from './BunnyModel'
 import { StyledCanvas } from './styles'
-import Loader from '../../common/loader'
-import { Suspense } from 'react'
 
 function Room() {
   return (
