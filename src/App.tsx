@@ -2,7 +2,6 @@ import Project from './components/project'
 import Info from './components/info'
 import GlobalNavBar from './components/layout/GlobalNavBar'
 import useBreakpoint from './hooks/common/useBreakpoint'
-import Room from './components/room/index'
 import Contact from './components/contact'
 import useActiveSection from './hooks/common/useActiveSection'
 
@@ -25,9 +24,6 @@ export default function App() {
       <main>
         <div id="info" ref={(el) => el && setRef(el)}>
           <Info />
-        </div>
-        <div id="room" ref={(el) => el && setRef(el)}>
-          <Room />
         </div>
         <div id="project" ref={(el) => el && setRef(el)}>
           <Project />

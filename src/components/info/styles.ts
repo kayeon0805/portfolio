@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Card from '../common/Card'
-import { H1, H3, H5 } from '../common/Typography'
-import Section from '../common/Section'
+import Card from '../common/card'
+import { H1, H3, H5 } from '../common/typography'
+import Section from '../common/section'
 
 export const StyledSection = styled(Section)`
   ${({ theme }) => theme.media('mobile')`
@@ -14,11 +14,11 @@ export const ProfileCard = styled(Card)`
   justify-content: center;
   align-items: center;
   position: relative;
-  max-height: 400px;
+  padding: 0;
 
-  img {
-    object-fit: contain;
-    border-radius: 12px;
+  & > div {
+    width: 300px;
+    height: 300px;
   }
 `
 
@@ -35,9 +35,10 @@ export const Grid = styled.div`
     margin-bottom: 8px;
 
     ${({ theme }) => theme.media('tablet')`
-      grid-row: 2;
+      grid-row: 1;
       grid-column: 1;
       margin-bottom: 0;
+      font-size: 24px;
     `};
   }
 

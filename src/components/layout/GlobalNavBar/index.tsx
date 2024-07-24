@@ -1,7 +1,6 @@
 import ThemeToggleButton from './ThemeToggleButton'
 import { Button, NavBar, NavList } from './styles'
 import { ReactComponent as InfoIcon } from '../../../assets/images/icon_info.svg'
-import { ReactComponent as RoomIcon } from '../../../assets/images/icon_home.svg'
 import { ReactComponent as ProjectIcon } from '../../../assets/images/icon_project.svg'
 import { ReactComponent as ContactIcon } from '../../../assets/images/icon_question.svg'
 
@@ -17,7 +16,7 @@ export default function GlobalNavBar({ activeId, handleClickNav }: Props) {
         <img src="/images/logo.svg" alt="logo" />
       </Button>
       <NavList>
-        {['info', 'room', 'project', 'contact'].map((sectionId) => (
+        {['info', 'project', 'contact'].map((sectionId) => (
           <li key={sectionId} onClick={() => handleClickNav(sectionId)} className={activeId === sectionId ? 'active' : ''}>
             <Button>{getSectionIcon(sectionId)}</Button>
           </li>
@@ -33,8 +32,6 @@ const getSectionIcon = (section: string) => {
     case 'info':
     default:
       return <InfoIcon />
-    case 'room':
-      return <RoomIcon />
     case 'project':
       return <ProjectIcon />
     case 'contact':

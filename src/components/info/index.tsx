@@ -1,5 +1,6 @@
-import Card from '../common/Card'
-import { H1, H5 } from '../common/Typography'
+import Card from '../common/card'
+import { H1, H5 } from '../common/typography'
+import Room from './room'
 import { Grid, ListTitle, ProfileCard, StyledSection, Ul } from './styles'
 
 export default function Info() {
@@ -8,7 +9,9 @@ export default function Info() {
       <Grid>
         <H1 fontWeight={700}>Kayeon</H1>
         <ProfileCard>
-          <img src="/images/profile.jpeg" alt="profile" />
+          <div>
+            <Room />
+          </div>
         </ProfileCard>
         <Card>
           <Ul>

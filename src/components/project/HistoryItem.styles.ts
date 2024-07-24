@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { H3 } from '../common/Typography'
-import Section from '../common/Section'
+import { H3 } from '../common/typography'
+import Section from '../common/section'
 
 export const CardFlexContainer = styled.div`
   width: 100%;
@@ -11,6 +11,10 @@ export const CardFlexContainer = styled.div`
 
   .image-card {
     aspect-ratio: 16/9;
+
+    ${({ theme }) => theme.media('tablet')`
+      max-height: 300px;
+    `};
   }
 
   img {
@@ -21,6 +25,7 @@ export const CardFlexContainer = styled.div`
   ${({ theme }) => theme.media('tablet')`
       flex-direction: column;
       gap: 20px;
+      margin-top: 14px;
     `};
 `
 
@@ -49,4 +54,20 @@ export const ListItem = styled(Section).attrs({
 })`
   flex-direction: column;
   align-items: start;
+
+  h1 {
+    margin-bottom: 20px;
+
+    ${({ theme }) => theme.media('tablet')`
+      font-size: 24px;
+      margin-bottom: 10px;
+    `};
+  }
+
+  h3 {
+    ${({ theme }) => theme.media('tablet')`
+      font-size: 18px;
+      margin-bottom: 8px;
+    `};
+  }
 `

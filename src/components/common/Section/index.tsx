@@ -5,8 +5,6 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   height: 100dvh;
-  min-height: 800px;
-  overflow-y: auto;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 
