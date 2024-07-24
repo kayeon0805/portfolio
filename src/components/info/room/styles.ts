@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Section from '../../common/section'
 import { Canvas } from '@react-three/fiber'
+import Section from '../../common/section'
 
 export const StyledSection = styled(Section)`
   position: relative;
