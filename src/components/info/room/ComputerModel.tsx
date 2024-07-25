@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { GroupProps } from '@react-three/fiber'
 
 export function ComputerModel(props: GroupProps) {
-  const { nodes, materials } = useGLTF('models/computer_set_up/scene.gltf')
+  const { nodes, materials } = useGLTF('models/computer_set_up/scene.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[-3.7, 3.961, 1.167]} rotation={[0, Math.PI / 2, 0]} scale={[0.173, 0.176, 0.173]}>
@@ -53,4 +53,4 @@ export function ComputerModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

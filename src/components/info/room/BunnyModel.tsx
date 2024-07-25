@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { GroupProps } from '@react-three/fiber'
 
 export function BunnyModel(props: GroupProps) {
-  const { nodes, materials } = useGLTF('models/bunny/scene.gltf')
+  const { nodes, materials } = useGLTF('models/bunny/scene.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_4.geometry} material={materials.Kain} />
@@ -11,4 +11,4 @@ export function BunnyModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

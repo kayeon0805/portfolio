@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { GroupProps } from '@react-three/fiber'
 
 export function RoomModel(props: GroupProps) {
-  const { nodes, materials } = useGLTF('models/room/scene.gltf')
+  const { nodes, materials } = useGLTF('models/room/scene.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_4.geometry} material={materials.normal} />
@@ -11,4 +11,4 @@ export function RoomModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

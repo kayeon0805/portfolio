@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { GroupProps } from '@react-three/fiber'
 
 export function SideTableModel(props: GroupProps) {
-  const { nodes, materials } = useGLTF('models/sidetable/scene.gltf')
+  const { nodes, materials } = useGLTF('models/sidetable/scene.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -21,4 +21,4 @@ export function SideTableModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

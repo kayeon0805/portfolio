@@ -7,7 +7,7 @@ import { Group } from 'three'
 
 export function SimpleCharacterModel(props: GroupProps) {
   const group = React.useRef<Group>(null)
-  const { scene, animations } = useGLTF('models/simple_character/scene.gltf')
+  const { scene, animations } = useGLTF('models/simple_character/scene.glb')
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
@@ -55,4 +55,4 @@ export function SimpleCharacterModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

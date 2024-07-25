@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { GroupProps } from '@react-three/fiber'
 
 export function GuitarModel(props: GroupProps) {
-  const { nodes, materials } = useGLTF('models/guitars/scene.gltf')
+  const { nodes, materials } = useGLTF('models/guitars/scene.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[0.35, 0, 0]} rotation={[0, Math.PI / 6, 0]}>
@@ -48,4 +48,4 @@ export function GuitarModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')

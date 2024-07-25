@@ -6,7 +6,7 @@ import { Group, LoopRepeat } from 'three'
 
 export function CatModel(props: GroupProps) {
   const group = useRef<Group>(null)
-  const { scene, animations } = useGLTF('models/cat/scene.gltf')
+  const { scene, animations } = useGLTF('models/cat/scene.glb')
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
@@ -55,4 +55,4 @@ export function CatModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.gltf')
+useGLTF.preload('/scene.glb')
