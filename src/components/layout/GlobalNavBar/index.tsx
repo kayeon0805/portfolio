@@ -1,6 +1,8 @@
-import { ReactComponent as InfoIcon } from '../../../assets/images/icon_info.svg'
-import { ReactComponent as ProjectIcon } from '../../../assets/images/icon_project.svg'
-import { ReactComponent as ContactIcon } from '../../../assets/images/icon_question.svg'
+'use client'
+
+import InfoIcon from '../../../assets/images/icon_info.svg'
+import ProjectIcon from '../../../assets/images/icon_project.svg'
+import ContactIcon from '../../../assets/images/icon_question.svg'
 import ThemeToggleButton from './ThemeToggleButton'
 import { Button, NavBar, NavList } from './styles'
 

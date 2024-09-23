@@ -53,4 +53,4 @@ export function ComputerModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/computer_set_up/scene.glb')

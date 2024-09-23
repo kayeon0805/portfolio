@@ -10,6 +10,8 @@ export const CardFlexContainer = styled.div`
   white-space: pre-wrap;
 
   .image-card {
+    display: flex;
+    align-items: center;
     aspect-ratio: 16/9;
 
     ${({ theme }) => theme.media('tablet')`

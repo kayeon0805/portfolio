@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useMemo, useRef } from 'react'
 import { GroupProps, useFrame, useGraph } from '@react-three/fiber'
 import { useAnimations, useGLTF } from '@react-three/drei'
@@ -55,4 +57,4 @@ export function CatModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/cat/scene.glb')

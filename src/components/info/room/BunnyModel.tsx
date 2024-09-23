@@ -11,4 +11,4 @@ export function BunnyModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/bunny/scene.glb')

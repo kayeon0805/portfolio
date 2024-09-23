@@ -48,4 +48,4 @@ export function GuitarModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/guitars/scene.glb')

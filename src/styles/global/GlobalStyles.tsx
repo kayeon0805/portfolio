@@ -1,47 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Pretendard';
-	font-weight: 300;
-    src: url('/fonts/Pretendard-Light.woff2') format('woff2'),
-         url('/fonts/Pretendard-Light.woff') format('woff');
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Pretendard';
-	font-weight: 400;
-    src: url('/fonts/Pretendard-Regular.woff2') format('woff2'),
-         url('/fonts/Pretendard-Regular.woff') format('woff');
-    font-style: normal;
-  }
-
- 
-  @font-face {
-    font-family: 'Pretendard';
-	font-weight: 500;
-    src: url('/fonts/Pretendard-Medium.woff2') format('woff2'),
-         url('/fonts/Pretendard-Medium.woff') format('woff');
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Pretendard';
-	font-weight: 600;
-    src: url('/fonts/Pretendard-SemiBold.woff2') format('woff2'),
-         url('/fonts/Pretendard-SemiBold.woff') format('woff');
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Pretendard';
-	font-weight: 700;
-    src: url('/fonts/Pretendard-Bold.woff2') format('woff2'),
-         url('/fonts/Pretendard-Bold.woff') format('woff');
-    font-style: normal;
-  }
-
   :root {
     --primary-bg-color: #000000;
     --secondary-bg-color: #e4e4e4;

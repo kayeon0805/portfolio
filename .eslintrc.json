@@ -53,6 +53,7 @@
     "function-call-argument-newline": ["error", "consistent"],
     // "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/indent": "off",
+    "@typescript-eslint/no-empty-object-type": "warn",
     "max-len": [
       "error",
       {

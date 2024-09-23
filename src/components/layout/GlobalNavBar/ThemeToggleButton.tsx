@@ -1,3 +1,5 @@
+'use client'
+
 import { useThemeContext } from '../../../contexts/ThemeContext'
 import { Button } from './styles'
 

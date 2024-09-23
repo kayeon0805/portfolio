@@ -11,4 +11,4 @@ export function RoomModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/room/scene.glb')

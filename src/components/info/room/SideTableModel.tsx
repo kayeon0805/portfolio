@@ -21,4 +21,4 @@ export function SideTableModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/sidetable/scene.glb')

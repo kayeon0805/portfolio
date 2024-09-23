@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Card from '../common/card'
 import { H1, H5 } from '../common/typography'
 import { CardFlexContainer, HistoryList, HistoryListTitle, ListItem } from './HistoryItem.styles'
@@ -22,7 +23,17 @@ export default function HistoryItem({ title, subtitle, image, workScopes, techSp
       <H5 style={{ fontStyle: 'italic' }}>{subtitle}</H5>
       <CardFlexContainer>
         <Card className="image-card">
-          <img src={image.src} alt={image.alt} />
+          <Image
+            src={image.src}
+            alt={image.alt}
+            unoptimized
+            width={100}
+            height={100}
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
         </Card>
         <Card>
           <div>

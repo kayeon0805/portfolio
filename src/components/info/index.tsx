@@ -19,9 +19,9 @@ export default function Info() {
               <ListTitle fontWeight={600} marginBottom={4}>
                 About Me
               </ListTitle>
-              <p>
+              <div>
                 <H5>- 안녕하세요 웹 프론트엔드 개발자 김가연입니다.</H5>
-              </p>
+              </div>
               <p>1. 스타트업에서 상용 서비스의 프론트엔드 개발을 주도하였습니다.</p>
               <p>2. 다양한 직군과 원활하게 소통이 가능합니다.</p>
               <p>3. 반응형 디자인을 적용해 다양한 화면에서 일관된 사용자 경험을 제공할 수 있습니다.</p>

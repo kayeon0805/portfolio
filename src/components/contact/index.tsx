@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { H1 } from '../common/typography'
 import { CopyStatusMessage, List, StyledSection } from './styles'

@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react'
 import { Breakpoints, breakpoints } from '../../styles/theme/breakpoints'
 
@@ -11,15 +13,21 @@ const checkBreakpoint = (width: number): Breakpoints => {
 }
 
 export default function useBreakpoint() {
-  const [breakpoint, setBreakpoint] = useState<Breakpoints>(checkBreakpoint(window.innerWidth))
+  const [breakpoint, setBreakpoint] = useState<Breakpoints>('desktop')
 
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof window !== 'undefined') {
+      const handleResize = () => {
+        setBreakpoint(checkBreakpoint(window.innerWidth))
+      }
+
       setBreakpoint(checkBreakpoint(window.innerWidth))
-    }
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
+
+      window.addEventListener('resize', handleResize)
+
+      return () => {
+        window.removeEventListener('resize', handleResize)
+      }
     }
   }, [])
 

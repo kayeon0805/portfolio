@@ -1,18 +1,19 @@
-import React from 'react'
+'use client'
+
+import React, { useRef, useMemo, useEffect } from 'react'
 import { GroupProps, useFrame, useGraph } from '@react-three/fiber'
 import { useAnimations, useGLTF } from '@react-three/drei'
 import { SkeletonUtils } from 'three-stdlib'
-import { LoopRepeat } from 'three'
-import { Group } from 'three'
+import { LoopRepeat, Group } from 'three'
 
 export function SimpleCharacterModel(props: GroupProps) {
-  const group = React.useRef<Group>(null)
+  const group = useRef<Group>(null)
   const { scene, animations } = useGLTF('models/simple_character/scene.glb')
-  const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene])
+  const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
   const { nodes, materials } = useGraph(clone)
   const { actions } = useAnimations(animations, group)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (actions) {
       const keys = Object.keys(actions)
       if (keys.length > 0) {
@@ -55,4 +56,4 @@ export function SimpleCharacterModel(props: GroupProps) {
   )
 }
 
-useGLTF.preload('/scene.glb')
+useGLTF.preload('models/simple_character/scene.glb')

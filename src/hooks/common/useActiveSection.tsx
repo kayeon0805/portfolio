@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useRef, useState, useCallback } from 'react'
 
 export default function useActiveSection(options?: IntersectionObserverInit) {
