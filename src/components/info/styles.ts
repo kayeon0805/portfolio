@@ -57,6 +57,11 @@ export const Grid = styled.div`
 export const Ul = styled.ul`
   list-style-type: none;
 
+  h5 {
+    line-height: 160%;
+    margin-bottom: 8px;
+  }
+
   p {
     line-height: 160%;
     margin: 0;
