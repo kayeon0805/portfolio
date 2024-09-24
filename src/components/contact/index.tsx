@@ -25,7 +25,7 @@ export default function Contact() {
 
   return (
     <StyledSection id={NAV_MENUS.CONTACT}>
-      <H1 fontWeight={600} marginBottom={40}>
+      <H1 fontWeight={600} $marginBottom={40}>
         Contact
       </H1>
       <List>

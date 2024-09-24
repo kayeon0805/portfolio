@@ -17,7 +17,7 @@ export default function Info() {
         <Card>
           <Ul>
             <li>
-              <ListTitle fontWeight={600} marginBottom={4}>
+              <ListTitle fontWeight={600} $marginBottom={4}>
                 About Me
               </ListTitle>
               <div>
@@ -28,11 +28,11 @@ export default function Info() {
               <p>3. 반응형 디자인을 적용해 다양한 화면에서 일관된 사용자 경험을 제공할 수 있습니다.</p>
             </li>
             <li>
-              <ListTitle marginTop={20}>Hobby</ListTitle>
+              <ListTitle $marginTop={20}>Hobby</ListTitle>
               <p>기타 연주, 공예, 개발 공부</p>
             </li>
             <li>
-              <ListTitle marginTop={20}>Career</ListTitle>
+              <ListTitle $marginTop={20}>Career</ListTitle>
               <p>2022.07 ~ 2024.04 | The Vplanet INC.</p>
             </li>
           </Ul>

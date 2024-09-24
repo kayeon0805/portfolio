@@ -4,16 +4,16 @@ interface TypographyProps {
   color?: string
   fontSize?: string
   fontWeight?: number
-  marginTop?: number
-  marginBottom?: number
+  $marginTop?: number
+  $marginBottom?: number
 }
 
 const Base = styled.h1<TypographyProps>`
   color: ${({ color }) => color || 'inherit'};
   font-size: ${({ fontSize }) => fontSize || 'inherit'};
   font-weight: ${({ fontWeight }) => fontWeight || 'inherit'};
-  margin-top: ${({ marginTop }) => marginTop || 0}px;
-  margin-bottom: ${({ marginBottom }) => marginBottom || 0}px;
+  margin-top: ${({ $marginTop }) => $marginTop || 0}px;
+  margin-bottom: ${({ $marginBottom }) => $marginBottom || 0}px;
 `
 
 export const H1 = styled(Base).attrs({ as: 'h1' })`

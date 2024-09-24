@@ -33,7 +33,7 @@ export const CardFlexContainer = styled.div`
 
 export const HistoryListTitle = styled(H3).attrs({
   fontWeight: 600,
-  marginBottom: 14,
+  $marginBottom: 14,
 })``
 
 export const HistoryList = styled.ul`

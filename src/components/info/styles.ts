@@ -81,7 +81,7 @@ export const Ul = styled.ul`
 
 export const ListTitle = styled(H3).attrs({
   fontWeight: 600,
-  marginBottom: 4,
+  $marginBottom: 4,
 })`
   ${({ theme }) => theme.media('desktop')`
       font-size: 20px;
