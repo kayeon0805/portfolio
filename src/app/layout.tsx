@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
 import StyledComponentsRegistry from '../lib/registry'
+import ThemeClient from './ThemeClient'
 
 export const metadata: Metadata = {
   // eslint-disable-next-line quotes
@@ -43,7 +44,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" className={pretendard.className}>
       <body>
         <StyledComponentsRegistry>
-          <div id="root">{children}</div>
+          <ThemeClient>
+            <div id="root">{children}</div>
+          </ThemeClient>
         </StyledComponentsRegistry>
       </body>
     </html>

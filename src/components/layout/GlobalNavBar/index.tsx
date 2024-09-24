@@ -4,6 +4,7 @@ import InfoIcon from '../../../assets/images/icon_info.svg'
 import ProjectIcon from '../../../assets/images/icon_project.svg'
 import ContactIcon from '../../../assets/images/icon_question.svg'
 import ThemeToggleButton from './ThemeToggleButton'
+import { NAV_MENUS } from './constants'
 import { Button, NavBar, NavList } from './styles'
 
 type Props = {
@@ -18,7 +19,7 @@ export default function GlobalNavBar({ activeId, handleClickNav }: Props) {
         <img src="/images/logo.svg" alt="logo" />
       </Button>
       <NavList>
-        {['info', 'project', 'contact'].map((sectionId) => (
+        {Object.values(NAV_MENUS).map((sectionId) => (
           <li key={sectionId} onClick={() => handleClickNav(sectionId)} className={activeId === sectionId ? 'active' : ''}>
             <Button>{getSectionIcon(sectionId)}</Button>
           </li>

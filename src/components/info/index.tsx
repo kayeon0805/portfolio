@@ -1,11 +1,12 @@
 import Card from '../common/card'
 import { H1, H5 } from '../common/typography'
+import { NAV_MENUS } from '../layout/GlobalNavBar/constants'
 import Room from './room'
 import { Grid, ListTitle, ProfileCard, StyledSection, Ul } from './styles'
 
 export default function Info() {
   return (
-    <StyledSection>
+    <StyledSection id={NAV_MENUS.INFO}>
       <Grid>
         <H1 fontWeight={700}>Kayeon</H1>
         <ProfileCard>
