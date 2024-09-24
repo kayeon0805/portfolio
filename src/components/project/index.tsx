@@ -1,3 +1,5 @@
+'use client'
+
 import { NAV_MENUS } from '../layout/GlobalNavBar/constants'
 import HistoryItem from './HistoryItem'
 import { VplateEditorInfo, VplateInfo, adminInfo, labsInfo } from './constants'

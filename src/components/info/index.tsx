@@ -1,3 +1,5 @@
+'use client'
+
 import Card from '../common/card'
 import { H1, H5 } from '../common/typography'
 import { NAV_MENUS } from '../layout/GlobalNavBar/constants'
